@@ -1,0 +1,346 @@
+/* Font */
+@font-face {
+    font-family: 'Assassin';
+    src: url("assets/font/Assassin$.ttf") format("ttf");     
+   }
+
+/* animation Header Background */
+
+.animation {
+    background: linear-gradient(60deg, #3a0404, #070000);
+    background-size: 400% 400%;
+
+    animation: AnimationName 8s ease infinite;
+}
+
+@keyframes AnimationName {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+}
+
+/* animation Background txt*/
+
+@keyframes AnimationName1 {
+    0%{background-position:76% 0%}
+    50%{background-position:25% 100%}
+    100%{background-position:76% 0%}
+}
+
+
+/* Balise HTML *****************************************/
+
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', arial, Helvetica, sans-serif;
+}
+
+header{
+    font-family: 'Assassin';
+    text-align: center;
+    color: #010d1a;
+    font-size: 2.5em;
+    position: relative; 
+    font-weight: 300;    
+}
+
+nav {
+    
+    height: 80px;
+    margin-bottom: 20px;
+    font-size: 0.5em;    
+}
+
+footer {
+    font-family: 'Assassin';
+    height: 80px;
+    padding-top: 30px;
+    color: white;
+    background: black;
+    margin-top: 50px;
+}
+
+
+
+header img{
+    height: 400px; 
+}
+
+h1{
+    text-shadow: -10px 0px 9px rgba(240,245,248,0.7);
+}
+
+h2 {
+    font-family: 'Assassin';
+    font-size: 1.6em;
+    color: #010d1a;
+    text-shadow: -10px 0px 9px  rgba(81, 83, 85, 0.979);
+}
+
+h2:hover{
+    color: rgb(207, 0, 15);
+    
+}
+
+h2::before{
+    content: url(assets/pictures/Assassins-Creed-Logo.png);
+    width: 30px;
+}
+
+h2::after{
+    content: url(assets/pictures/Assassins-Creed-Logo.png);
+    width: 30px;
+}
+
+p {
+    text-align: justify;
+}
+
+a{
+    color:white;
+    text-shadow: -8px 6px 6px rgba(255, 255, 255, 1);
+    text-decoration: none; 
+}
+
+a:hover{
+    color: rgba(207, 0, 15, 1);
+    text-shadow: -8px 6px 6px rgba(207, 0, 15, 1);
+    cursor: url('assets/pictures/Assassin\'s\ Creed\ Cursor\ WHITE.cur'), pointer; 
+}
+
+
+
+
+/* Classe *********************************************************************************/
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.container-1{
+
+    display: flex;
+    justify-content: space-between; 
+}
+
+.content-1 {
+    padding-right:30px
+}
+
+.content-2{
+    justify-content: center;
+}
+
+.content-2 img{
+   
+    width: 500px;   
+}
+
+.logo-header {
+       position: relative;
+}
+
+.logo-header .titre1 {
+    z-index: 1;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    transform: translate(0px,-310px);
+    
+} 
+
+.image {
+    border: 0px solid white;
+    border-radius: 15px;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    transition: 1.5s;
+}
+
+.image:hover{
+    transform:scale(1.1);
+    transition: 1.5s;  
+}
+
+.lien {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    height: 73px;
+}
+
+.lien:hover{
+    background: url(assets/pictures/logo-lien.jpg) no-repeat;
+    background-position: center;
+    transition: 1s;   
+}
+
+.element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    padding: 16px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.element img{
+    transition: 3s;
+    
+}
+
+.element:hover img {
+    opacity: 0;
+    transition: 3s;
+}
+
+
+.txt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 3s;
+    font-size: 1.3em;
+    font-weight: bolder;
+} 
+
+.txt p{
+    
+   margin: 80px 25px 50px 25px;
+   text-align: left;
+}
+
+.color{
+    color:rgba(207, 0, 15, 1);
+    font-style: italic;
+}
+
+.txt:hover {
+    opacity: 1;
+    transition: 3s;
+    /* background-image: radial-gradient(circle, #e4e9f2, #c2ced3, #a4b2b1, #8c9690, #777a71);
+    border: 0px solid #777a71; */
+    background: linear-gradient(220deg, #ccd2d0, #4c5452);
+    background-size: 300% 300%;
+    animation: AnimationName1 6s ease infinite;
+    border-radius: 20px;    
+}
+
+
+/* ID *********************************************************************************/
+
+#page {
+	min-height:100vh; 
+	display:flex; 
+	flex-direction:column;
+}
+
+#content {
+	flex-grow:1; 
+}
+
+#nav-bar{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;   
+}
+
+#histoire img{
+    width: 500px;
+    margin-top: 20px;
+}
+
+#histoire span {
+    font-style: italic;
+}
+
+#templier p{
+    padding-right: 30px;
+}
+
+#templier img{
+    width: 500px;
+    margin-top: 70px;
+}
+
+#templier span {
+    font-style: italic;
+}
+
+#templier p{
+    padding-right: 30px;
+}
+
+#credo h2 {
+    text-align: right;
+}
+
+#credo p {
+    padding-left: 30px;
+    margin-top: 35px;  
+}
+
+#credo img {
+    width: 375px;
+    margin-top: 100px;
+}
+
+#credo span {
+    font-style: italic
+    
+}
+
+#lame-secrete{
+
+    margin-top: 60px
+   
+}
+
+#lame-secrete span {
+    font-style: italic;
+    text-align: justify;
+}
+
+#lame-secrete p {
+    padding-right: 30px;
+}
+
+#lame-secrete img{
+
+    width: 450px;
+}
+
+#grille{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 100px 100px;
+  
+}
+ 
+#grille img{
+    height: 300px;
+} 
+
+#membre-assassins h2 {
+    margin-top: 100px;
+    margin-bottom: 75px;
+}
+
+#entete{
+
+    color: red;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 120px;
+    font-family: 'Assassin';
+
+    }
